@@ -2829,6 +2829,53 @@
 				margin-top: 7px;
 			}
 		}
+
+		#section_13fb3fca9 {
+        background: url('media/Frame 1.jpg') no-repeat center center;
+        background-size: cover;
+        position: relative;
+		}
+
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
+		#section_13fb3fca9 {
+			animation: fadeIn 2s ease-in-out;
+		}
+
+		.bilbo-swash-caps-regular {
+		font-family: "Bilbo Swash Caps", serif;
+		font-weight: 400;
+		font-style: normal;
+		}
+
+		.fancy-underline {
+			position: relative;
+			display: inline-block;
+		}
+
+		.fancy-underline::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0; /* Adjust the position of the underline */
+			width: 100%;
+			height: 4px; /* Thickness of the underline */
+			background: linear-gradient(90deg, #ff7eb3, #ffb347); /* Fancy gradient color */
+			border-radius: 10px; /* Makes it rounded */
+			transform: scaleX(0); /* Hidden by default */
+			transform-origin: left;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.fancy-underline:hover::after {
+			transform: scaleX(1); /* Expands on hover */
+		}
+
+
+    }
 	</style>
 	<link rel="icon" href="images/Group 3.png" sizes="32x32">
 	<link rel="icon" href="images/Group 3.png" sizes="192x192">
@@ -2854,6 +2901,10 @@
 	</script>
 	<link rel="shortcut icon" type="image/png" href="images/Group 3.png" sizes="32x32">
 	<script src="js/wp-emoji-release.min.js" defer=""></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
 </head>
 
 <body
@@ -2866,7 +2917,7 @@
 			data-logo-visibility="visible" data-logo-position="left" data-nav-position="top">
 			<div class="container-nav-inner container" data-nav="container-expanded">
 				<div class="navbar-inner menu-type-text" data-xl-width="12" data-navbar-type="container">
-					<div class="logo"><a href="https://vrajrajpura.github.io/Vraj_portfolio_website/"
+					<div class="logo"><a class="semplice-event" data-event-type="helper"
 							data-event="scrollToTop" title="Vraj Rajpura Portfolio"><img src="images/Group 3.png"
 								alt="logo"></a></div>
 					<nav class="standard" data-font="font_cmq05ad5r">
@@ -2886,6 +2937,13 @@
 							<li id="menu-item-383"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-383"><a><span>Contact</span></a>
 							</li>
+							<li id="menu-item-logo"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-logo">
+								<a href="https://www.washington.edu/">
+									<img src="media/W-Logo_White.png" alt="UW Logo" style="width: 35px; height: auto;">
+								</a>
+							</li>
+
 
 						</ul>
 					</nav>
@@ -2982,81 +3040,56 @@
 					<section id="section_13fb3fca9" class="content-block" data-column-mode-sm="single"
 						data-column-mode-xs="single" data-height="fullscreen" data-valign="center" data-justify="center"
 						data-layout="grid" data-force-fullscreen="true">
-
-						<div class="background-video">
-							<video data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted=""
-								data-object-fit="cover">
-								<source src="media/Header%20video%20web%201080.mp4" type="video/mp4">
-							</video>
-						</div>
-						<!-- <div class="background-image" style="background: url('images/lol.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-						</div> -->
-						<!-- <div class="background-image" style="background: url('images/lol.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-						</div> -->
 						<div class="container">
 							<div id="row_bad7f8314" class="row">
 								<div id="column_50b3b2c99" class="column" data-xl-width="11" data-lg-width="10"
 									data-md-width="11">
 									<div class="content-wrapper">
-
-
 										<div id="content_25upcjcby" style="margin-top: 100px;" class="column-content"
 											data-module="text">
 											<div class="is-content">
-												<h6 data-mce-style="text-align: center;" style="text-align: center;">
+												<h5 data-mce-style="text-align: center;" style="text-align: center;">
 													<span style="color: rgb(255, 255, 255);"
 														data-mce-style="color: rgb(255, 255, 255);">Heyy, I am
-														<B>VRAJ</B>, and I'm into</span>
-												</h6>
+														<B>VRAJ</B>, and I'm exploring how</span>
+												</h5>
 											</div>
 										</div>
 
 										<div id="content_bql70bhnp" class="column-content" data-module="text">
 											<div class="is-content">
-												<h1 style="text-align: center; " data-mce-style="text-align: center;"
+												<h1 style="text-align: center;" data-mce-style="text-align: center;"
 													data-font-size-md="4.444rem" data-line-height-md="4.389rem"
 													data-font-size-sm="3.278rem" data-line-height-sm="3.333rem"
 													data-font-size-xs="2.778rem" data-line-height-xs="2.778rem"
-													data-font-size-lg="4.889rem" data-line-height-lg="4.667rem"><span
-														data-letter-spacing-md="-0.222rem"
+													data-font-size-lg="4.889rem" data-line-height-lg="4.667rem">
+													<span data-letter-spacing-md="-0.222rem"
 														data-letter-spacing-sm="-0.206rem"
-														data-letter-spacing-xs="-0.117rem"><span
-															style="color: rgb(255, 255, 255);"
-															data-mce-style="color: rgb(231, 250, 236);"></span><span
-															style="color: rgb(255, 255, 255);"
-															data-mce-style="color: rgb(231, 250, 236);"><span
-																class="font_hv6r9gsca"></span></span>REVAMPING GENERIC
-														TECHNOLOGY FOR UNIQUE USE CASES!</span></h1>
+														data-letter-spacing-xs="-0.117rem">
+														<span style="color: rgb(255, 255, 255);"
+															data-mce-style="color: rgb(231, 250, 236);"></span>
+														<span style="color: rgb(255, 255, 255);"
+															data-mce-style="color: rgb(231, 250, 236);">
+															<span class="font_hv6r9gsca"></span>
+														</span>
+														GenAI can <span class="bilbo-swash-caps-regular fancy-underline">super-charge</span><br> your business
+													</span>
+												</h1>
 											</div>
 										</div>
-
-										<!-- <div id="content_o4ai86mkr" class="column-content" data-module="text">
-											<div class="is-content">
-												<h1 style="text-align: center; font-size: 3.278rem; line-height: 3.333rem;"
-													data-mce-style="text-align: center; font-size: 1.278rem; line-height: 3.333rem;"
-													data-font-size-md="4.444rem" data-line-height-md="4.389rem"
-													data-line-height-sm="3.333rem" data-font-size-sm="3.278rem"
-													data-font-size-xs="2.778rem" data-line-height-xs="2.833rem"
-													data-font-size-lg="4.889rem" data-line-height-lg="4.667rem"><span
-														style="color: rgb(255, 255, 255); letter-spacing: -0.206rem;"
-														data-mce-style="color: rgb(255, 255, 255); letter-spacing: -0.206rem;"
-														data-letter-spacing-md="-0.222rem"
-														data-letter-spacing-sm="-0.206rem"
-														data-letter-spacing-xs="-0.117rem">  </span></h1>
-											</div>
-										</div> -->
 
 										<div id="content_4nrvat77t" class="column-content" data-module="text">
 											<div class="is-content">
 												<h5 style="text-align: center;" data-mce-style="text-align: center;">
 													<span style="color: rgb(248, 248, 248);"
-														data-mce-style="color: rgb(248, 248, 248);"><span
-															class="font_cmq05ad5r">Vraj Rajpura</span> - A Final year
-														Computer Science & Engineering undergrad from SVNIT, Surat
-														aiming to build solutions at the intersection of design,
-														technology, impact and profitability. Imagine conversational AI
-														bots for mental health support and self driving cars as mobile
-														medical clinics, thats the FUTURE I SEE...... </span>
+														data-mce-style="color: rgb(248, 248, 248);">
+														<span class="font_cmq05ad5r">Vraj Rajpura</span> - A Master of Science in Information Management Student at the University of Washington, Seattle and
+														Computer Science & Engineering undergrad from NIT Surat
+														aiming to build solutions at the intersection of 
+														technology, ethics, impact and profitability. Imagine conversational AI
+														bots for personalized nutrition support and self driving cars as mobile
+														medical clinics, thats the FUTURE I SEE......
+													</span>
 
 													<div id="down" style="padding-top: 3%;">
 														<a id="down-link">
@@ -3068,19 +3101,6 @@
 																	d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
 															</svg>
 														</a>
-														<script
-															src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-														<script>
-															$(document).ready(function () {
-																// When SVG is clicked
-																$('#down-svg').click(function (e) {
-																	e.preventDefault();
-																	$('html, body').animate({
-																		scrollTop: $("#section_bsjqxx0yp").offset().top
-																	}, 1000);
-																});
-															});
-														</script>
 													</div>
 												</h5>
 											</div>
@@ -3091,6 +3111,19 @@
 							</div>
 						</div>
 					</section>
+
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+					<script>
+						$(document).ready(function () {
+							// When SVG is clicked
+							$('#down-svg').click(function (e) {
+								e.preventDefault();
+								$('html, body').animate({
+									scrollTop: $("#section_bsjqxx0yp").offset().top
+								}, 1000);
+							});
+						});
+					</script>
 
 					<section id="section_0sohyke5t" class="content-block" data-column-mode-sm="single"
 						data-column-mode-xs="single" data-layout="fluid" data-height="dynamic" data-gutter="no">
@@ -3177,8 +3210,8 @@
 														data-mce-style="color: #ffffff; letter-spacing: -0.139rem;"
 														data-letter-spacing-sm="-0.139rem"
 														data-letter-spacing-xs="-0.139rem">PROJECTS <span
-															class="font_hv6r9gsca">— SMART GLASSES FOR THE BLIND&nbsp;//
-															ADVANCED SAFETY FOR MOTORCYCLISTS</span></span></h2>
+															class="font_hv6r9gsca">— BIAS DETECTION IN AI-BASED HOUSE HUNTING / AI-THERAPIST ON WHATSAPP&nbsp;
+															</span></span></h2>
 											</div>
 										</div>
 
@@ -3243,6 +3276,120 @@
 											<div class="apg apg-hor-full" data-object-fit="cover"
 												data-title-visibility="both" data-arrow-visibility="visible"
 												data-arrow-size="small" data-mouseover="scale-opacity">
+
+												<div class="post-149 apg-post apg-post-hor-full carousel-cell even"
+													data-xl-width="6" data-lg-width="6" data-md-width="6"
+													data-sm-width="12" data-xs-width="12"
+													data-apg-object-position="top-center">
+
+													<a href="https://drive.google.com/file/d/16othtP0kyiV5efo48fFGiDRmFxo3rozJ/view?usp=sharing"
+														target="_blank" data-transition-element="transition_907fbfd94">
+														<div class="apg-grid-item">
+															<div class="post-thumbnail" data-scale="7">
+																<img src="images/calm.jpg">
+															</div>
+															<div class="apg-post-title none"
+																data-title-align="bottom-center">
+																<div class="title" data-font="font_qdryllvcq">EMMA COACH
+																</div>
+																<div class="type" data-font="font_hv6r9gsca">24/7 AI THERAPIST ON WHATSAPP
+																</div>
+															</div>
+														</div>
+													</a>
+												</div>
+												
+												<div class="post-149 apg-post apg-post-hor-full carousel-cell even"
+													data-xl-width="6" data-lg-width="6" data-md-width="6"
+													data-sm-width="12" data-xs-width="12"
+													data-apg-object-position="top-center">
+
+													<a href="https://drive.google.com/file/d/1JbbuJ85RW3dgNdN9gGIrZ6lFbwAmbUlD/view"
+														target="_blank" data-transition-element="transition_907fbfd94">
+														<div class="apg-grid-item">
+															<div class="post-thumbnail" data-scale="7">
+																<img src="images/960x0.png">
+															</div>
+															<div class="apg-post-title none"
+																data-title-align="bottom-center">
+																<div class="title" data-font="font_qdryllvcq">Racial/Gender steering in AI House-hunting
+																</div>
+																<div class="type" data-font="font_hv6r9gsca">Does ChatGPT have biases when providing you with housing options in a city?
+																</div>
+															</div>
+														</div>
+													</a>
+												</div>
+
+
+												<div class="post-149 apg-post apg-post-hor-full carousel-cell even"
+													data-xl-width="6" data-lg-width="6" data-md-width="6"
+													data-sm-width="12" data-xs-width="12"
+													data-apg-object-position="top-center">
+
+													<a href="https://drive.google.com/file/d/1Tt3gp1lrS5D3dk5SDzIUEE-_cjf2tWM0/view"
+														target="_blank" data-transition-element="transition_907fbfd94">
+														<div class="apg-grid-item">
+															<div class="post-thumbnail" data-scale="7">
+																<img src="images/Group 4.png">
+															</div>
+															<div class="apg-post-title none"
+																data-title-align="bottom-center">
+																<div class="title" data-font="font_qdryllvcq">Suppl-ai
+																</div>
+																<div class="type" data-font="font_hv6r9gsca">in-depth analysis on how AI is revolutionizing the supply chain & management industry!
+																</div>
+															</div>
+														</div>
+													</a>
+												</div>
+
+												<div class="post-149 apg-post apg-post-hor-full carousel-cell even"
+													data-xl-width="6" data-lg-width="6" data-md-width="6"
+													data-sm-width="12" data-xs-width="12"
+													data-apg-object-position="top-center">
+
+													<a href="https://drive.google.com/file/d/143nPPGNvHrN8Xpt19gBxmxEyyiDoruds/view"
+														target="_blank" data-transition-element="transition_907fbfd94">
+														<div class="apg-grid-item">
+															<div class="post-thumbnail" data-scale="7">
+																<img src="images/travis.png">
+															</div>
+															<div class="apg-post-title none"
+																data-title-align="bottom-center">
+																<div class="title" data-font="font_qdryllvcq">XR in GAMING
+																</div>
+																<div class="type" data-font="font_hv6r9gsca">Deep-dive on the growth of Mixed reaity in the industry.
+																</div>
+															</div>
+														</div>
+													</a>
+												</div>
+
+												
+
+												<div class="post-149 apg-post apg-post-hor-full carousel-cell even"
+													data-xl-width="6" data-lg-width="6" data-md-width="6"
+													data-sm-width="12" data-xs-width="12"
+													data-apg-object-position="top-center">
+
+													<a href="https://github.com/Vraj1234/Healthcare_project"
+														target="_blank" data-transition-element="transition_907fbfd94">
+														<div class="apg-grid-item">
+															<div class="post-thumbnail" data-scale="7">
+																<img src="images/health.png">
+															</div>
+															<div class="apg-post-title none"
+																data-title-align="bottom-center">
+																<div class="title" data-font="font_qdryllvcq">SMART HEALTH
+																</div>
+																<div class="type" data-font="font_hv6r9gsca">HEALTH CARE SYSTEM FOR SECURE AND PRIORTIY BASED INSURANCE DECISIONs
+																</div>
+															</div>
+														</div>
+													</a>
+												</div>
+
 												<div class="post-149 apg-post apg-post-hor-full carousel-cell even"
 													data-xl-width="6" data-lg-width="6" data-md-width="6"
 													data-sm-width="12" data-xs-width="12"
@@ -3555,7 +3702,7 @@
 											<div class="is-content">
 												<h5 data-mce-style="text-align: center;" style="text-align: center;">
 													<span style="color: rgb(50, 50, 50);"
-														data-mce-style="color: rgb(50, 50, 50);">- TWC -</span>
+														data-mce-style="color: rgb(50, 50, 50);">- EXTRIUS GROUP -</span>
 												</h5>
 											</div>
 										</div>
@@ -3570,7 +3717,7 @@
 											<div class="is-content">
 												<h5 data-mce-style="text-align: center;" style="text-align: center;">
 													<span style="color: rgb(50, 50, 50);"
-														data-mce-style="color: rgb(50, 50, 50);">- SVNIT -</span>
+														data-mce-style="color: rgb(50, 50, 50);">- EMMA COACH -</span>
 												</h5>
 											</div>
 										</div>
@@ -3585,7 +3732,7 @@
 											<div class="is-content">
 												<h5 data-mce-style="text-align: center;" style="text-align: center;">
 													<span style="color: rgb(50, 50, 50);"
-														data-mce-style="color: rgb(50, 50, 50);">- GDSC -</span>
+														data-mce-style="color: rgb(50, 50, 50);">- MUSAFIR.COM -</span>
 												</h5>
 											</div>
 										</div>
@@ -3610,6 +3757,18 @@
 										<div id="content_fteyn1tq3" class="column-content" data-module="gallery">
 											<div id="gallery-content_fteyn1tq3"
 												class="is-content semplice-gallery-slider ">
+												<div class="sgs-slide sgs-transform max-width sgs-slide-width-grid">
+													<img src="images/Frame 32.png" alt="Experience 1" caption="">
+												</div>
+
+												<div class="sgs-slide sgs-transform max-width sgs-slide-width-grid">
+													<img src="images/Frame 33.png" alt="Experience 1" caption="">
+												</div>
+
+												<div class="sgs-slide sgs-transform max-width sgs-slide-width-grid">
+													<img src="images/Frame 34.png" alt="Experience 1" caption="">
+												</div>
+
 												<div class="sgs-slide sgs-transform max-width sgs-slide-width-grid">
 													<img src="images/Frame 12.png" alt="Experience 1" caption="">
 												</div>
@@ -3755,16 +3914,37 @@
 											</div>
 										</div>
 
-										<div id="content_d8e3c6ioc" class="column-content" data-module="button">
+										<div id="content_d8e3c6ioc" class="column-content" data-module="button" style="display: flex; justify-content: center; gap: 10px;">
 
 											<div class="ce-button" data-align="center">
 												<div class="is-content " data-width="auto"
 													data-effect="slide-bottom-to-top" data-icon-direction="right">
-													<a data-font="font_qdryllvcq" href="Vraj-all.pdf" target="_blank"
-														download="Vraj Rajpura Resume" target="_self"
+													<a data-font="font_qdryllvcq" href="Vraj-Rajpura-all.pdf" target="_blank"
+														download="Vraj Rajpura Full Resume" target="_self"
 														data-text-effect="none" data-text-align="center">
 														<div data-content-for="xl">
-															<div class="inner">DOWNLOAD MY RESUME <svg
+															<div class="inner">DOWNLOAD MY FULL RESUME <svg
+																	style="padding-left: 10px;"
+																	xmlns="http://www.w3.org/2000/svg" width="30"
+																	height="30" fill="currentColor"
+																	class="bi bi-cloud-arrow-down" viewBox="0 0 16 16">
+																	<path fill-rule="evenodd"
+																		d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z" />
+																	<path
+																		d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+																</svg></div>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="ce-button" data-align="center">
+												<div class="is-content " data-width="auto"
+													data-effect="slide-bottom-to-top" data-icon-direction="right">
+													<a data-font="font_qdryllvcq" href="Vraj-Rajpura-concise.pdf" target="_blank"
+														download="Vraj Rajpura Concise Resume" target="_self"
+														data-text-effect="none" data-text-align="center">
+														<div data-content-for="xl">
+															<div class="inner">DOWNLOAD MY CONCISE RESUME <svg
 																	style="padding-left: 10px;"
 																	xmlns="http://www.w3.org/2000/svg" width="30"
 																	height="30" fill="currentColor"
