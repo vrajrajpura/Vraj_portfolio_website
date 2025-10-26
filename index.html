@@ -787,6 +787,107 @@
 		}
 	</style>
 	<style type="text/css" id="semplice-custom-css">
+		/* STYLES FOR CLOUD LOGOS */
+		.cloud-logos-container {
+			display: flex;
+			justify-content: center;  /* Centers the logos horizontally */
+			align-items: center;      /* Aligns them vertically */
+			gap: 1.5rem;              /* Reduced spacing between logos */
+			margin-top: 0.5rem;         /* Adds space below the text */
+			flex-wrap: wrap;          /* Allows logos to stack on small screens */
+		}
+
+		.cloud-logo-img {
+			height: 45px;   /* Default height for all logos */
+			width: auto;      /* Maintains the aspect ratio */
+			opacity: 0.75;    /* Matches the slightly faded look of your text */
+		}
+
+		/* Specific adjustment for AWS logo if needed to visually match other logos */
+		.cloud-logo-img[alt="Amazon Web Services Logo"] {
+			height: 80px; /* Increase AWS logo size to match others visually */
+		}
+
+
+		/* Makes logos smaller on mobile devices */
+		@media (max-width: 767px) {
+			.cloud-logos-container {
+				gap: 1rem; /* Even less spacing on mobile */
+				margin-top: 0.5rem;
+			}
+
+			.cloud-logo-img {
+				height: 35px; /* Smaller logos for mobile */
+			}
+
+			.cloud-logo-img[alt="Amazon Web Services Logo"] {
+				height: 45px; /* Adjust AWS logo for mobile as well */
+			}
+		}
+		/* STYLING FOR NEW HERO RESUME BUTTON */
+#content-353 #content_resume_button_hero {
+    padding-top: 0rem; /* Space from logos */
+    padding-bottom: 0rem;
+	margin-top: -3rem !important;
+    opacity: 1; /* Animation */
+    transform: translateY(3.3333rem); /* Animation */
+}
+
+#content-353 #content_resume_button_hero .is-content:after {
+    background-color: #ffffff; /* Hover fill color */
+}
+
+#content-353 #content_resume_button_hero .is-content,
+#content-353 #content_resume_button_hero .is-content:after,
+#content-353 #content_resume_button_hero .is-content a,
+#content-353 #content_resume_button_hero .is-content a:before,
+#content-353 #content_resume_button_hero .is-content a:after,
+#content-353 #content_resume_button_hero .is-content img {
+    transition: all 0.5s var(--ease-out-expo);
+}
+
+#content-353 #content_resume_button_hero .is-content {
+    background-color: transparent;
+    border-width: 0.05555555555555555rem;
+    border-radius: 2.7777777777777777rem;
+    border-color: #ffffff; /* White border */
+}
+
+#content-353 #content_resume_button_hero .is-content a,
+#content-353 #content_resume_button_hero .is-content a:before,
+#content-353 #content_resume_button_hero .is-content a:after {
+    font-size: 0.6666666666666666rem;
+    color: #ffffff; /* White text */
+    letter-spacing: -0.005555555555555556rem;
+    margin-right: 0.005555555555555556rem;
+    border-radius: 2.7777777777777777rem;
+    padding-bottom: 0.5555555555555556rem;
+    padding-left: 1.6666666666666667rem;
+    padding-right: 1.6666666666666667rem;
+    padding-top: 0.6666666666666666rem;
+}
+
+/* Center the SVG icon vertically with the text */
+#content-353 #content_resume_button_hero .is-content .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-353 #content_resume_button_hero .is-content .inner svg {
+    fill: #ffffff; /* Ensure SVG is white */
+    width: 1.1rem; /* Control icon size */
+    height: 1.1rem;
+    padding-left: 0.5rem !important; /* Override inline style */
+}
+
+#content-353 #content_resume_button_hero .is-content:hover a,
+#content-353 #content_resume_button_hero .is-content:hover a:before,
+#content-353 #content_resume_button_hero .is-content:hover a:after,
+#content-353 #content_resume_button_hero .is-content:hover .inner svg {
+    color: #323232 !important; /* Black text on hover */
+    fill: #323232 !important; /* Black icon on hover */
+}
 		.container {
 			max-width: 1340px;
 		}
@@ -2831,7 +2932,7 @@
 		}
 
 		#section_13fb3fca9 {
-        background: url('media/pawel-czerwinski-rBw7xg5NNz0-unsplash.jpg') no-repeat center center;
+        background: url('media/kamran-abdullayev-QvWevI5VwJg-unsplash\ 1.png') no-repeat center center;
         background-size: cover;
         position: relative;
 		}
@@ -3038,66 +3139,101 @@
 				<div class="sections">
 
 					<section id="section_13fb3fca9" class="content-block" data-column-mode-sm="single"
-						data-column-mode-xs="single" data-height="fullscreen" data-valign="center" data-justify="center"
-						data-layout="grid" data-force-fullscreen="true">
-						<div class="container">
-							<div id="row_bad7f8314" class="row">
-								<div id="column_50b3b2c99" class="column" data-xl-width="11" data-lg-width="10"
-									data-md-width="11">
-									<div class="content-wrapper">
-										<div id="content_25upcjcby" style="margin-top: 0px;" class="column-content"
-											data-module="text">
-											<div class="is-content">
-												<h5 data-mce-style="text-align: center;" style="text-align: center;">
-													<span style="color: rgb(255, 255, 255);"
-														data-mce-style="color: rgb(255, 255, 255);">Heyy, I am
-														<B>VRAJ</B>, and I'm exploring how to </span>
-												</h5>
-											</div>
-										</div>
+	data-column-mode-xs="single" data-height="fullscreen" data-valign="center" data-justify="center"
+	data-layout="grid" data-force-fullscreen="true">
+	<div class="container">
+		<div id="row_bad7f8314" class="row">
+			<div id="column_50b3b2c99" class="column" data-xl-width="11" data-lg-width="10"
+				data-md-width="11">
+				<div class="content-wrapper">
+					<div id="content_25upcjcby" style="margin-top: 0px;" class="column-content"
+						data-module="text">
+						<div class="is-content">
+							<h5 data-mce-style="text-align: center;" style="text-align: center;">
+								<span style="color: rgb(255, 255, 255);"
+									data-mce-style="color: rgb(255, 255, 255);">Heyy, I am
+									<B>VRAJ</B>, and I'm exploring </span>
+							</h5>
+						</div>
+					</div>
 
-										<div id="content_bql70bhnp" class="column-content" data-module="text">
-											<div class="is-content">
-												<h1 style="text-align: center;" data-mce-style="text-align: center;"
-													data-font-size-md="4.444rem" data-line-height-md="4.389rem"
-													data-font-size-sm="3.278rem" data-line-height-sm="3.333rem"
-													data-font-size-xs="2.778rem" data-line-height-xs="2.778rem"
-													data-font-size-lg="4.889rem" data-line-height-lg="4.667rem">
-													<span data-letter-spacing-md="-0.222rem"
-														data-letter-spacing-sm="-0.206rem"
-														data-letter-spacing-xs="-0.117rem">
-														<span style="color: rgb(255, 255, 255);"
-															data-mce-style="color: rgb(231, 250, 236);"></span>
-														<span style="color: rgb(255, 255, 255);"
-															data-mce-style="color: rgb(231, 250, 236);">
-															<span class="font_hv6r9gsca"></span>
-														</span>
-														
-														<span class="bilbo-swash-caps-regular fancy-underline"> Supercharge -</span> Software Development with GenAI & Cloud
-													</span>
-												</h1>
-											</div>
-										</div>
+					<div id="content_bql70bhnp" class="column-content" data-module="text">
+						<div class="is-content">
+							<h1 style="text-align: center;" data-mce-style="text-align: center;"
+								data-font-size-md="4.444rem" data-line-height-md="4.389rem"
+								data-font-size-sm="3.278rem" data-line-height-sm="3.333rem"
+								data-font-size-xs="2.778rem" data-line-height-xs="2.778rem"
+								data-font-size-lg="4.889rem" data-line-height-lg="4.667rem">
+								<span data-letter-spacing-md="-0.222rem"
+									data-letter-spacing-sm="-0.206rem"
+									data-letter-spacing-xs="-0.117rem">
+									<span style="color: rgb(255, 255, 255);"
+										data-mce-style="color: rgb(231, 250, 236);"></span>
+									<span style="color: rgb(255, 255, 255);"
+										data-mce-style="color: rgb(231, 250, 236);">
+										<span class="font_hv6r9gsca"></span>
+									</span>
+									
+									<span class="bilbo-swash-caps-regular fancy-underline"> Open Source -</span> Research Software Development with GenAI & the Cloud
+								</span>
+							</h1>
+						</div>
+					</div>
 
-										<div id="content_4nrvat77t" class="column-content" data-module="text">
-											<div class="is-content">
-												<h5 style="text-align: center;" data-mce-style="text-align: center;">
-													<span style="color: rgb(248, 248, 248);"
-														data-mce-style="color: rgb(248, 248, 248);">
-														<span class="font_cmq05ad5r">Vraj Rajpura</span> - A Master of Science in Information Management Student at the University of Washington, Seattle and
-														Computer Science & Engineering undergrad from NIT Surat. I am passionate about
-														building solutions at the intersection of
-														technology, ethics & impact. I have interned at Expedia Group, Barclays & Musafir.com. I am now looking to my first full-time venture into Software Development. Check out my portfolio down here! ↓
-													</span>
-												</h5>
-											</div>
-										</div>
+					<div id="content_4nrvat77t" class="column-content" data-module="text">
+						<div class="is-content">
+							<h5 style="text-align: center;" data-mce-style="text-align: center;">
+								<span style="color: rgb(248, 248, 248);"
+									data-mce-style="color: rgb(248, 248, 248);">
+									<span class="font_cmq05ad5r">Vraj Rajpura</span> - A Master of Science in Information Management Student at the University of Washington, Seattle and
+									Computer Science & Engineering undergrad from NIT Surat. I am passionate about
+									building solutions at the intersection of
+									technology, ethics & impact. I have interned at Expedia Group, Barclays & Musafir.com. I am now looking to my first full-time venture into Software Development. Check out my portfolio down here! ↓
+								</span>
+							</h5>
+						</div>
+					</div>
 
+					<div id="content_cloud_logos" class="column-content" data-module="text">
+						<div class="cloud-logos-container">
+							<a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+								<img src="images/aws_logo.png" alt="Amazon Web Services Logo" class="cloud-logo-img">
+							</a>
+							<a href="https://portal.azure.com" target="_blank" rel="noopener noreferrer">
+								<img src="images/azure_logo.png" alt="Microsoft Azure Logo" class="cloud-logo-img">
+							</a>
+							<a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer">
+								<img src="images/gcp_logo.png" alt="Google Cloud Platform Logo" class="cloud-logo-img">
+							</a>
+						</div>
+					</div>
+					<div id="content_resume_button_hero" class="column-content" data-module="button">
+						<div class="ce-button" data-align="center">
+							<div class="is-content " data-width="auto"
+								data-effect="slide-bottom-to-top" data-icon-direction="right">
+								<a data-font="font_qdryllvcq" href="Vraj Rajpura SWE.pdf" target="_blank"
+									download="Vraj Rajpura Resume"
+									data-text-effect="none" data-text-align="center">
+									<div data-content-for="xl">
+										<div class="inner">DOWNLOAD MY RESUME <svg
+												style="padding-left: 10px;"
+												xmlns="http://www.w3.org/2000/svg" width="30"
+												height="30" fill="currentColor"
+												class="bi bi-cloud-arrow-down" viewBox="0 0 16 16">
+												<path fill-rule="evenodd"
+													d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708z" />
+												<path
+													d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+											</svg></div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
-					</section>
+					</div>
+					</div> </div>
+		</div>
+	</div>
+</section>
 
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 					<script>
@@ -3797,6 +3933,10 @@
 												</div>
 
 												<div class="sgs-slide sgs-transform max-width sgs-slide-width-grid">
+													<img src="images/Frame 43.png" alt="Experience 1" caption="">
+												</div>
+
+												<div class="sgs-slide sgs-transform max-width sgs-slide-width-grid">
 													<img src="images/Frame 33.png" alt="Experience 1" caption="">
 												</div>
 
@@ -3955,7 +4095,7 @@
 											<div class="ce-button" data-align="center">
 												<div class="is-content " data-width="auto"
 													data-effect="slide-bottom-to-top" data-icon-direction="right">
-													<a data-font="font_qdryllvcq" href="Vraj Rajpura SWE .pdf" target="_blank"
+													<a data-font="font_qdryllvcq" href="Vraj Rajpura SWE.pdf" target="_blank"
 														download="Vraj Rajpura Resume" target="_self"
 														data-text-effect="none" data-text-align="center">
 														<div data-content-for="xl">
@@ -4686,8 +4826,7 @@
 													style="color: rgb(255, 255, 255); letter-spacing: -0.061rem;"
 													data-mce-style="color: #ffffff; letter-spacing: -0.061rem;"
 													data-letter-spacing-xl="-0.061rem" class="font_qdryllvcq">VRAJ
-													RAPURA <span class="font_hv6r9gsca">— SOFTWARE DEVELOPER / ML
-														ENGINEER / TECHNO-PRENEUR</span></span></p>
+													RAPURA <span class="font_hv6r9gsca">— SOFTWARE DEVELOPER / OPEN SOURCE ENTHUSIAST & GEN-AI</span></span></p>
 										</div>
 									</div>
 
@@ -5555,6 +5694,30 @@
 			s4.animate.gsap["content_v7fwc1qj4"].to("#content-holder #content_v7fwc1qj4 .is-content", props);
 			// pause timeline
 			s4.animate.gsap["content_v7fwc1qj4"].pause();
+
+			// --- MODIFIED ANIMATION FOR HERO BUTTON ---
+            var playRepeat = [];
+            s4.animate.gsap["content_resume_button_hero"] = gsap.timeline({
+                scrollTrigger: { 
+                    trigger: "#content-holder #content_resume_button_hero .is-content",
+                    start: "top 95%", // Start animation when the top of the button is 95% down the viewport
+                    toggleActions: "play none none none" // Play once when it scrolls into view
+                },
+                repeat: 0,
+            });
+
+            // Use .from() instead of .to() and setting initial state in CSS
+            s4.animate.gsap["content_resume_button_hero"].from("#content-holder #content_resume_button_hero .is-content", {
+                duration: 1.25,
+                ease: "Expo.easeInOut",
+                delay: 0.2, // Small delay can help
+                opacity: 0,
+                y: "3.3333rem", // The starting Y offset
+                clearProps: "all" // Cleans up transforms after animation
+            });
+            // NO NEED TO PAUSE .from() timelines usually
+            // --- END MODIFIED ANIMATION ---
+			
 			$(window).scroll();
 		})(jQuery); (function ($) {
 			"use strict"; var playRepeat = [];
